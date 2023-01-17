@@ -28,5 +28,5 @@ body {
 }
 
 .text-color-gradient {
-  @apply text-transparent bg-clip-text bg-color-gradient;
+  @apply bg-color-gradient bg-clip-text text-transparent;
 }
