@@ -8,7 +8,7 @@
 </script>
 
 <header
-  class="absolute top-0 z-20 w-full bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100"
+  class="absolute top-0 z-20 w-full bg-zinc-800 text-zinc-100 dark:bg-zinc-100 dark:text-zinc-800"
 >
   <nav
     class="container mx-auto py-4 px-6 md:flex md:h-20 md:items-center md:justify-between md:p-2"
@@ -17,12 +17,18 @@
       <a href="#/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 752 500"
-          class="w-16 fill-current"
+          viewBox="0 0 200 40"
+          class="h-10 fill-current"
         >
           <path
-            d="M.3.3h311.535v108.24H.3V.3Zm0 392.055v107.641h311.535V392.355H.3Zm135.47-87.75V196.381h221.613L553.425.3h150.982L399.431 304.605H135.77Zm328.098 60.976 76.997-75.731 211.132 210.146H598.698l-134.83-134.415Z"
+            d="M0 0h24.971v8.644H0V0Zm0 31.388v8.611h24.971v-8.611H0Zm10.872-7.02V15.71h17.747L44.318 0h12.091L31.986 24.368H10.872Zm26.274 4.878 6.166-6.12L60.22 39.999H47.944L37.146 29.246Z"
           />
+          <text
+            font-family="Poppins"
+            font-weight="bold"
+            transform="matrix(.08008 0 0 .08 57.895 23.883)"
+            font-size="200">SEK-Consulting</text
+          >
         </svg>
       </a>
       <button class="flex md:hidden" on:click={() => (showMenu = !showMenu)}>
