@@ -6,6 +6,23 @@
   >
     <ul class="flex flex-col items-center text-lg md:flex-row md:space-x-8">
       <li>
+        <a
+          href="#hero"
+          title="Go to top"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 60 40"
+            class="h-4 fill-current"
+          >
+            <path
+              d="M0 0h24.971v8.644H0V0Zm0 31.388v8.611h24.971v-8.611H0Zm10.872-7.02V15.71h17.747L44.318 0h12.091L31.986 24.368H10.872Zm26.274 4.878 6.166-6.12L60.22 39.999H47.944L37.146 29.246Z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
         <a href="impressum" title="Legal Notice">Legal Notice</a>
       </li>
     </ul>
@@ -13,7 +30,8 @@
       <li>
         <a
           rel="noopener noreferrer"
-          href="#/"
+          href="https://www.linkedin.com/in/eideloth/"
+          target="_blank"
           title="LinkedIn"
           class="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100"
         >
