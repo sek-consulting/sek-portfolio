@@ -7,7 +7,7 @@
     <ul class="flex flex-col items-center text-lg md:flex-row md:space-x-8">
       <li>
         <a
-          href="#hero"
+          href="/#"
           title="Go to top"
           class="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100"
         >

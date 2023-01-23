@@ -12,7 +12,6 @@
     "prettier": "prettier --write src"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.14.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/svelte": "^1.0.2",
     "@astrojs/tailwind": "^2.1.3",

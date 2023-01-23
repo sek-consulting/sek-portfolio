@@ -2,8 +2,8 @@
   let showMenu = false;
 
   let links = [
-    { url: "#about", text: "About Us" },
-    { url: "#contact", text: "Contact" },
+    { url: "/#services", text: "Services" },
+    { url: "/#about", text: "About Us" },
   ];
 </script>
 
@@ -33,7 +33,6 @@
         </svg>
       </button>
     </div>
-
     <ul
       class="mt-8 flex-col items-center space-y-4 text-lg md:mt-0 md:flex md:flex-row md:space-y-0 md:space-x-10 
       {showMenu ? 'flex' : 'hidden'}"
