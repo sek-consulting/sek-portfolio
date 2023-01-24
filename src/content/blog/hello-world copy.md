@@ -1,6 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
-
 title: Hello World
 publishDate: 2019-12-01 00:00:00
 description: |

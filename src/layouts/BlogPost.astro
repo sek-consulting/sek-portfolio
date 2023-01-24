@@ -1,22 +1,20 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
 import { getReadingTime } from "../lib/readingtime";
 
-const { content } = Astro.props;
+const readingTime = 0; //getReadingTime(Astro.props.compiledContent());
 
-const readingTime = getReadingTime(Astro.props.compiledContent());
-const publishDate = new Date(content.publishDate).toLocaleDateString("en-US");
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, publishDate, tags } = Astro.props;
 ---
 
-<BaseLayout
-  title={`SEK-Consulting | ${content.title}`}
-  description={content.description}
-  type="article"
->
+<BaseLayout title={title} description={description} tags={tags} type="article">
   <div class="mx-auto my-20 max-w-2xl space-y-12 p-4 md:mt-40">
     <article>
       <h1 class="mb-2 text-4xl font-semibold md:text-6xl">
-        {content.title}
+        {title}
       </h1>
       <div
         class="mb-8 flex w-full flex-col items-start dark:text-gray-400 md:flex-row md:items-center md:space-x-2"
@@ -35,7 +33,7 @@ const publishDate = new Date(content.publishDate).toLocaleDateString("en-US");
       class="flex flex-wrap space-x-4 border-t border-dashed border-zinc-400 py-2"
     >
       {
-        content.tags.map((tag) => (
+        tags.map((tag) => (
           <a
             rel="noopener noreferrer"
             href="#"

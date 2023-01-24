@@ -4,6 +4,7 @@
   let links = [
     { url: "/#services", text: "Services" },
     { url: "/#about", text: "About Us" },
+    { url: "/blog", text: "Blog" },
   ];
 </script>
 

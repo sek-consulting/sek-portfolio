@@ -4,7 +4,7 @@
   <div
     class="container mx-auto flex flex-col items-center space-y-4 py-10 md:flex-row md:justify-between"
   >
-    <ul class="flex flex-col items-center text-lg md:flex-row md:space-x-8">
+    <ul class="flex flex-col items-center text-lg md:flex-row md:space-x-8 space-y-2 md:space-y-0">
       <li>
         <a
           href="/#"
