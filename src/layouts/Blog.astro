@@ -20,7 +20,6 @@ const { posts, heading } = Astro.props;
         <div class="container mx-auto my-8 max-w-4xl space-y-4 rounded bg-zinc-200 p-4 dark:bg-zinc-700">
           <div class="flex items-center justify-between">
             <a
-              rel="noopener noreferrer"
               href={`/blog/${post.slug}`}
               class="text-3xl font-semibold hover:underline md:text-4xl"
             >
@@ -29,7 +28,6 @@ const { posts, heading } = Astro.props;
             <div class="hidden space-x-2 md:flex">
               {post.data.tags.map((tag) => (
                 <a
-                  rel="noopener noreferrer"
                   href={`/blog/tags/${tag}`}
                   class="text-color-gradient rounded px-2 py-1"
                 >
@@ -41,7 +39,6 @@ const { posts, heading } = Astro.props;
           <p>{post.body.substring(0, 500)}...</p>
           <div class="flex items-center justify-between">
             <a
-              rel="noopener noreferrer"
               href={`/blog/${post.slug}`}
               class="text-color-gradient font-semibold"
             >

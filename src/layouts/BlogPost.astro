@@ -25,7 +25,7 @@ const { title, description, publishDate, tags, readingTime } = Astro.props;
           </span>
         </div>
       </div>
-      <div id="content">
+      <div id="content" class="p-4">
         <slot />
       </div>
     </article>
@@ -35,7 +35,6 @@ const { title, description, publishDate, tags, readingTime } = Astro.props;
       {
         tags.map((tag) => (
           <a
-            rel="noopener noreferrer"
             href={`/blog/tags/${tag}`}
             class="text-color-gradient text-lg font-semibold"
           >
