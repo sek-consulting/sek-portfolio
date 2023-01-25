@@ -72,11 +72,11 @@ const { title, description, publishDate, tags, readingTime } = Astro.props;
   }
   /* inline code snippets */
   #content :global(*:not(pre) > code) {
-    @apply relative rounded bg-zinc-200 py-[0.2rem] px-[0.3rem] text-sm text-zinc-600 dark:bg-zinc-700 dark:text-zinc-400;
+    @apply rounded bg-zinc-200 py-[0.2rem] px-[0.3rem] text-sm italic text-zinc-600 dark:bg-zinc-700 dark:text-zinc-400;
   }
   /* code blocks */
   #content :global(pre) {
-    @apply rounded-md !bg-zinc-200 p-2  dark:!bg-zinc-700;
+    @apply rounded !bg-zinc-200 p-2  dark:!bg-zinc-700;
   }
   #content :global(pre code span) {
     @apply !text-zinc-600 dark:!text-zinc-400;
