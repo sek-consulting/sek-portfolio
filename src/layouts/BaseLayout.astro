@@ -4,12 +4,12 @@ import "../styles/global.css";
 import Footer from "../components/Footer.svelte";
 import Navbar from "../components/Navbar.svelte";
 
-export interface Props {
+type Props = {
   title?: string;
   description?: string;
   tags?: string[];
   type?: string;
-}
+};
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
