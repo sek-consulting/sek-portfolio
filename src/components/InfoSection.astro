@@ -1,0 +1,58 @@
+---
+import { Icon } from "astro-icon"
+
+const infoCards = [
+  {
+    icon: "mdi:github",
+    title: "GitHub",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, architecto amet sapiente earum consequuntur, distinctio labore explicabo maxime eaque voluptas."
+  },
+  {
+    icon: "mdi:github",
+    title: "GitHub",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, architecto amet sapiente earum consequuntur, distinctio labore explicabo maxime eaque voluptas."
+  },
+  {
+    icon: "mdi:github",
+    title: "GitHub",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, architecto amet sapiente earum consequuntur, distinctio labore explicabo maxime eaque voluptas."
+  },
+  {
+    icon: "mdi:github",
+    title: "GitHub",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, architecto amet sapiente earum consequuntur, distinctio labore explicabo maxime eaque voluptas."
+  },
+  {
+    icon: "mdi:github",
+    title: "GitHub",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, architecto amet sapiente earum consequuntur, distinctio labore explicabo maxime eaque voluptas."
+  },
+  {
+    icon: "mdi:github",
+    title: "GitHub",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, architecto amet sapiente earum consequuntur, distinctio labore explicabo maxime eaque voluptas."
+  }
+]
+---
+
+<section class="pt-24 lg:pt-28">
+  <h2 class="text-4xl font-bold lg:text-5xl lg:tracking-tight">
+    This is a catchy subheading about what we do
+  </h2>
+  <p class="mt-4 text-lg text-zinc-600">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, exercitationem quis quasi
+    sunt pariatur fugiat magnam nobis iusto accusantium laboriosam illo quo? Laudantium, obcaecati
+    ut? Iste ex officiis quis error!"
+  </p>
+  <div class="mt-16 grid gap-16 sm:grid-cols-2 lg:mt-20 lg:grid-cols-3">
+    {
+      infoCards.map((card) => (
+        <div class="flex flex-col items-center">
+          <Icon class="h-12" name={card.icon} />
+          <h3 class="mt-4 text-2xl font-bold">{card.title}</h3>
+          <div class="mt-2 max-w-xs text-justify leading-relaxed">{card.text}</div>
+        </div>
+      ))
+    }
+  </div>
+</section>

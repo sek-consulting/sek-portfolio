@@ -1,32 +1,13 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "@/components/Hero.astro"
+import InfoSection from "@/components/InfoSection.astro"
+import Container from "@/components/ui/Container.astro"
+import Layout from "@/layouts/Layout.astro"
 ---
 
-<BaseLayout>
-  <section id="hero" class="mt-20 mb-20 p-4 md:mt-40">
-    <div
-      class="container mx-auto flex flex-col justify-center md:flex-row md:justify-between"
-    >
-      <div
-        class="flex flex-col justify-center p-6 text-center md:max-w-lg md:flex-1 md:text-left"
-      >
-        <h1 class="text-5xl font-semibold tracking-tight md:text-7xl">
-          We make
-          <span class="text-color-gradient">your visions</span>
-          a reality
-        </h1>
-        <p class="my-6 text-lg md:my-10">
-          Some cool subheading extra pitch sentence just for you!
-        </p>
-        <div class="flex items-center justify-center md:justify-start">
-          <a
-            href="#contact"
-            title="Contact"
-            class="bg-color-gradient rounded px-8 py-3 text-lg font-semibold text-zinc-100"
-            >Contact us</a
-          >
-        </div>
-      </div>
-    </div>
-  </section>
-</BaseLayout>
+<Layout title="Welcome to Astro.">
+  <Container>
+    <Hero />
+    <InfoSection />
+  </Container>
+</Layout>

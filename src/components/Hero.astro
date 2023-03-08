@@ -1,0 +1,45 @@
+---
+import { Picture } from "@astrojs/image/components"
+
+import { Icon } from "astro-icon"
+
+import heroImage from "@/assets/hero.png"
+import Button from "@/components/ui/Button.astro"
+---
+
+<section class="flex flex-col justify-center pt-24 lg:flex-row lg:justify-between lg:space-x-16">
+  <div class="flex flex-col justify-center lg:flex-1">
+    <h1 class="text-5xl font-bold lg:text-7xl lg:tracking-tighter">
+      This is the cool and catchy headline
+    </h1>
+    <p class="mt-4 text-lg text-zinc-600">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ullam, culpa neque beatae
+      voluptates minima aspernatur, iure a quasi itaque quos recusandae consequatur velit delectus
+      voluptatibus asperiores nemo sit reiciendis.
+    </p>
+    <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+      <Button class="flex items-center justify-center gap-1" variant="primary" href="#contact">
+        <Icon class="h-4" name="mdi:send" />
+        Contact
+      </Button>
+      <Button
+        class="flex items-center justify-center gap-1"
+        variant="outline"
+        target="_blank"
+        href="https://github.com/sek-consulting/"
+      >
+        <Icon class="h-4" name="mdi:github" />
+        GitHub
+      </Button>
+    </div>
+  </div>
+  <div class="hidden items-center justify-center md:flex">
+    <Picture
+      src={heroImage}
+      alt="A guy sitting at his desk working really hard."
+      sizes="(min-width: 1536px) 32rem, (min-width: 1280px) 28rem, (min-width: 1024px) 24rem, 20rem"
+      widths={[320, 384, 448, 512]}
+      aspectRatio="1:1"
+    />
+  </div>
+</section>

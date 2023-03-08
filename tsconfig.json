@@ -1,7 +1,10 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    // needed for zod generated types to not be optional
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   }
 }

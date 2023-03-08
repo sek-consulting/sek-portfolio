@@ -1,10 +1,9 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from "astro/config"
 
-import svelte from "@astrojs/svelte";
-import tailwind from "@astrojs/tailwind";
-import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind"
+import sitemap from "@astrojs/sitemap"
+import image from "@astrojs/image"
 
 export default defineConfig({
-  site: "https://www.sek-consulting.com",
-  integrations: [svelte(), tailwind(), sitemap()],
-});
+  integrations: [tailwind(), sitemap(), image()]
+})

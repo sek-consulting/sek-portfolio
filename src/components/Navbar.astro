@@ -1,0 +1,62 @@
+---
+import Button from "@/components/ui/Button.astro"
+
+let links = [
+  { title: "About Us", path: "/" },
+  { title: "Contact", path: "/" },
+  { title: "Blog", path: "/" }
+]
+---
+
+<script>
+  const icon = document.getElementById("hamburger")
+  const menu = document.getElementById("menu")
+
+  icon?.addEventListener("click", () => {
+    icon.classList.toggle("clicked")
+    menu?.classList.toggle("hidden")
+    menu?.classList.toggle("flex")
+  })
+</script>
+
+<header class="w-full">
+  <nav
+    class="container mx-auto py-4 px-5 md:flex md:h-20 md:items-center md:justify-between md:py-2"
+  >
+    <div class="flex items-center justify-between">
+      <Button variant="ghost" class="px-0" href="/">
+        <svg viewBox="0 0 60 40" class="h-8 fill-current md:h-10">
+          <path
+            d="M0 0h24.971v8.644H0V0Zm0 31.388v8.611h24.971v-8.611H0Zm10.872-7.02V15.71h17.747L44.318 0h12.091L31.986 24.368H10.872Zm26.274 4.878 6.166-6.12L60.22 39.999H47.944L37.146 29.246Z"
+          ></path>
+        </svg>
+      </Button>
+      <div id="hamburger" class="group flex flex-col gap-[4px] md:hidden">
+        <div
+          class="h-[4px] w-[30px] rounded bg-zinc-900 duration-500 group-[.clicked]:translate-y-[8px] group-[.clicked]:rotate-[45deg]"
+        >
+        </div>
+        <div class="h-[4px] w-[30px] rounded bg-zinc-900 duration-500 group-[.clicked]:scale-0">
+        </div>
+        <div
+          class="h-[4px] w-[30px] rounded bg-zinc-900 duration-500 group-[.clicked]:-translate-y-[8px] group-[.clicked]:-rotate-[45deg]"
+        >
+        </div>
+      </div>
+    </div>
+    <ul
+      id="menu"
+      class="mt-6 hidden flex-col space-y-3 text-lg md:mt-0 md:flex md:flex-row md:space-y-0 md:space-x-8"
+    >
+      {
+        links.map((link) => (
+          <li>
+            <Button variant="link" href={link.path}>
+              {link.title}
+            </Button>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
