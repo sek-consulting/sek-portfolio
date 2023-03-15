@@ -1,5 +1,6 @@
 ---
-import Button from "@/components/ui/button.astro"
+import Logo from "~/assets/icons/logo.astro"
+import Button from "~/components/ui/button.astro"
 
 let links = [
   { title: "About Us", path: "/" },
@@ -25,11 +26,7 @@ let links = [
   >
     <div class="flex items-center justify-between">
       <Button variant="ghost" class="px-0" href="/">
-        <svg viewBox="0 0 60 40" class="h-8 fill-current md:h-10">
-          <path
-            d="M0 0h24.971v8.644H0V0Zm0 31.388v8.611h24.971v-8.611H0Zm10.872-7.02V15.71h17.747L44.318 0h12.091L31.986 24.368H10.872Zm26.274 4.878 6.166-6.12L60.22 39.999H47.944L37.146 29.246Z"
-          ></path>
-        </svg>
+        <Logo />
       </Button>
       <div id="hamburger" class="group flex flex-col gap-[4px] md:hidden">
         <div
